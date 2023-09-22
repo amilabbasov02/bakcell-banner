@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Priva;
+    src: url("../font/PrivaPro-Four.63a95278.otf") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Priva;
+    src: url("../font/PrivaPro-One.0eeff1a0.otf") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Priva,sans-serif;
+    font-weight: 400;
+}
+
+.bakcell-banner{
+    max-width: 1200px;
+}
+
+.main{
+    background: #E00134;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-text h4{
+    font-size: 33px;
+    max-width: 400px;
+    color: #fff;
+}
+.banner-text p{
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.banner-text a{
+    max-width: 120px;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #E00134;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+.banner-text a:hover{
+    background: #e2e1e1;
+}
+a svg{
+    margin-left: 5px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.bg-img{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: -190px;
+    width: 55%;
+}
+.main-img{
+    position: relative;
+    z-index: 1;
+    margin-right: 100px;
+}
+@media only screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-image{
+        text-align: center;
+    }
+    .bg-img{
+        bottom: 0;
+    }
+}
